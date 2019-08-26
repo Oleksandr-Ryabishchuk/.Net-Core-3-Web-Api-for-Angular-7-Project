@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AppCore\\Api and Angular7\\AuthApi\\AuthApi.csproj": {}
+    "D:\\AppCore\\Api\\AuthApi\\AuthApi.csproj": {}
   },
   "projects": {
-    "D:\\AppCore\\Api and Angular7\\AuthApi\\AuthApi.csproj": {
+    "D:\\AppCore\\Api\\AuthApi\\AuthApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AppCore\\Api and Angular7\\AuthApi\\AuthApi.csproj",
+        "projectUniqueName": "D:\\AppCore\\Api\\AuthApi\\AuthApi.csproj",
         "projectName": "AuthApi",
-        "projectPath": "D:\\AppCore\\Api and Angular7\\AuthApi\\AuthApi.csproj",
+        "projectPath": "D:\\AppCore\\Api\\AuthApi\\AuthApi.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\AppCore\\Api and Angular7\\AuthApi\\obj\\",
+        "outputPath": "D:\\AppCore\\Api\\AuthApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

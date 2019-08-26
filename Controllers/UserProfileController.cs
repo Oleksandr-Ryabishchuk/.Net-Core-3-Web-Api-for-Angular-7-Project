@@ -34,14 +34,7 @@ namespace AuthApi.Controllers
             };
         }
 
-        [HttpGet]
-        [Authorize(Roles="Admin")]
-        [Route("ForAdmin")]
-        public string GetForAdmin()
-        {
-            return "Web method for Admin";
-        }
-
+      
         [HttpGet]
         [Authorize(Roles = "User")]
         [Route("ForUser")]

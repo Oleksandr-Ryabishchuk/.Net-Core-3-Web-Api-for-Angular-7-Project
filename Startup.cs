@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using AuthApi.ViewModels;
 using AuthApi.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Cors;
@@ -12,6 +13,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using System;
+using AuthApi.SettingsModels;
 
 namespace AuthApi
 {
@@ -38,6 +40,8 @@ namespace AuthApi
             services.AddDefaultIdentity<ApplicationUser>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<AuthenticationContext>();
+
+            services.AddDbContext<PostContext>(x => x.UseSqlServer(Configuration.GetConnectionString("IdentityConnection")));
             // MvcOptions.EnableEndPointRouting = false;
             services.Configure<IdentityOptions>(options => 
             {
